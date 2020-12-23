@@ -1,6 +1,8 @@
-const name = getNameFromUrl() || "Youtube";
+const name = getNameFromUrl() || "Keine Argumente angegeben!";
 
 const nameEle = document.getElementById("name");
+const ylno = document.getElementById("ylno");
+const greetings = document.getElementById("greetings");
 
 createNameSpans(name);
 
@@ -16,6 +18,16 @@ function createNameSpans(name) {
   nameArray.forEach((letter, index) => {
     htmlString += `<span class="letter" id="letter-${index}">${letter}</span>`;
   });
+  if(name == "Alex"){
+    ylno.textContent = "Es war ein Jahr, wie kein anderes. Bald ist es auch vorbei, deswegen steht jetzt Weihnachten vor der Tür. Deswegen diese Weihnachtsgrüße, du kleines Kitzelmonster!!"
+    greetings.textContent = "Dein FIGGO Simon"
+  }
+  if(name == "Carmen"){
+    greetings.textContent = "Dein FIGGO Simon"
+  }
+  if(name == "Mama"){
+    greetings.textContent = "Dein FIGGO Simon"
+  }
   nameEle.innerHTML = htmlString;
 }
 
