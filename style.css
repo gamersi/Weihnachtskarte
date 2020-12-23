@@ -1,0 +1,29 @@
+#noparam{
+    font-family: Roboto;
+    font-weight: 300;
+    padding-top: 100%;
+}
+
+#paramsactive{
+    background-color: red;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#FWN{
+    position: absolute;
+    font-family: Helvetica;
+    height: 9px;
+    font-weight: 400;
+    left: 15px;
+}
+#DisplayNamePls{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 20pt;
+    font-weight: 400;
+    left: 15px;
+    top: 35px;
+}
