@@ -10,7 +10,7 @@ function snow() {
     snowFlake.classList.add("snow-flake");
 
     // schneeflocke zufällig auswählen
-    let snowFlakeSymbolNumber = Math.floor(Math.random() * content.length);
+    let snowFlakeSymbolNumber = Math.floor(Math.random() *( content.length-1));
     let snowFlakeSymbol = document.createTextNode(
       content[snowFlakeSymbolNumber]
     );
@@ -22,7 +22,7 @@ function snow() {
     snowFlake.style.fontSize = fontSize + "px";
 
     // horizontale position bestimmen
-    let horizontal = Math.floor(Math.random() * 100);
+    let horizontal = Math.floor(Math.random() * 99);
     snowFlakeWrapper.style.left = horizontal + "%";
 
     snowFlakeWrapper.style.top = "-55px";
